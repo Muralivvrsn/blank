@@ -1,25 +1,39 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
+  "name": "Forward: Automate, Detox, Own your Job Hunt!",
+  "description": "Forward automates your job hunt. If you hate going through multiple websites every day, Forward has got you covered!",
+  "version": "5.0.0.4",
+  "manifest_version": 3,
+  "permissions": [
+      "storage",
+      "alarms",
+      "notifications",
+      "cookies",
+      "idle",
+      "sidePanel"
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background": {
+      "service_worker": "background.js"
+  },
+  "side_panel": {
+      "default_path": "index.html"
+  },
+  "action": {
+      "default_popup": "index.html",
+      "default_title": "Forward",
+      "default_icon": {
+          "16": "logo192.png",
+          "48": "logo192.png",
+          "128": "logo192.png"
+      }
+  },
+  "icons": {
+      "16": "logo192.png",
+      "48": "logo192.png",
+      "128": "logo192.png"
+  },
+  "host_permissions": [
+      "https://www.useforward.app/",
+      "http://localhost:8080/",
+      "https://forward-website-next-3796-2cd080da-kwk0oy8i.onporter.run/"
+  ]
 }
